@@ -87,7 +87,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 10px;
   font: inherit;
   vertical-align: baseline;
 }
@@ -143,8 +143,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-size: 18px;
-  margin-bottom: 15px;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
   font-family: "Rubik", sans-serif;
 }
 
@@ -160,23 +160,22 @@ p {
 .header-container {
   display: flex;
   flex-flow: row wrap;
-  border: 1px solid blue;
   justify-content: space-evenly;
   flex-basis: 100%;
+  margin: 1rem 0 2.5rem 0;
 }
 
 .logo {
-  border: 1px solid green;
   flex-basis: 20%;
 }
 
 nav {
   display: flex;
-  border: 1px solid red;
   /* text-align: center; */
   justify-content: space-around;
   align-items: center;
   flex-basis: 80%;
+  margin-top: 1.2rem;
 }
 
 nav a {
@@ -184,11 +183,16 @@ nav a {
   color: black;
 }
 
+.highway-pic {
+  margin-bottom: 1.5rem;
+  width: 80rem;
+}
+
 .top-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   border-bottom: 1px dashed black;
 }
 
@@ -199,7 +203,7 @@ nav a {
 }
 
 .middle-content {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   border-bottom: 1px dashed black;
 }
 
@@ -217,17 +221,56 @@ nav a {
 .middle-content .boxes .box {
   width: 12.5%;
   height: 100px;
-  background: black;
-  margin: 20px 2.5%;
+  margin: 2rem 2.5%;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.box1 {
+  background-color: teal;
+}
+
+.box2 {
+  background-color: gold;
+}
+
+.box3 {
+  background-color: cadetblue;
+}
+
+.box4 {
+  background-color: coral;
+}
+
+.box5 {
+  background-color: crimson;
+}
+
+.box6 {
+  background-color: forestgreen;
+}
+
+.box7 {
+  background-color: darkorchid;
+}
+
+.box8 {
+  background-color: hotpink;
+}
+
+.box9 {
+  background-color: indigo;
+}
+
+.box10 {
+  background-color: dodgerblue;
+}
+
 .bottom-content {
   display: flex;
-  margin: 0 2% 20px;
+  margin: 0 2% 2rem;
   justify-content: space-around;
 }
 
@@ -249,11 +292,112 @@ footer nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 2%;
+  padding: 2rem 2%;
   font-size: 14px;
 }
 
 footer nav a {
   color: white;
   text-decoration: none;
+}
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  .header-container {
+    flex-flow: column wrap;
+  }
+
+  .header-container nav {
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-container nav a {
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    width: 70%;
+    line-height: 2rem;
+    color: rgb(207, 207, 207);
+  }
+
+  .header-container nav .home {
+    border: 1px solid lightgray;
+    color: darkslategray;
+    font-weight: 700;
+    text-shadow: 0.05rem 0.07rem white;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(235, 235, 235),
+      rgb(170, 170, 170)
+    );
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .highway-pic {
+    width: 100%;
+  }
+
+  .highway-pic img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container {
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .top-content {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .top-content .text-container {
+    width: 100%;
+  }
+
+  .middle-content {
+    flex-flow: column wrap;
+  }
+
+  .middle-content .boxes {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .middle-content .boxes .box {
+    width: 30%;
+    margin: 0.7rem 0 0.7rem 0;
+  }
+
+  .bottom-content {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .bottom-content .text-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  footer nav {
+    width: 100%;
+  }
+
+  /* body {
+    overflow-x: hidden;
+  } */
 }
